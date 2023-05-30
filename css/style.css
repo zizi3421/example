@@ -1,0 +1,238 @@
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Nanum+Gothic&display=swap');
+
+/* 초기화 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #121212;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* 가운데 정렬 */
+.wrap{width: 1000px; margin: auto; padding: 100px 10px;}
+/* header */
+header{
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+header>.wrap{
+  padding: 24px 10px;/* header 안쪽의 여백만 수정 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo */
+.logo{
+  font-family: 'katibeh';
+  font-size: 42px;
+  letter-spacing: 2px;/* 자간 */
+  margin-top: -24px;
+}
+/* menu */
+.menuGroup{
+  display: flex;
+}
+.menuGroup>ul{
+  display: flex;
+}
+.gnb>li{margin: 0 20px;}
+.icon>li{
+  margin: 0 5px; 
+  font-size: 18px;
+  margin-top: -2px;
+}
+.gnb >.active{color: orange;}
+
+
+/* section요소의 h1요소 */
+section h1{
+  font-family: Georgia, 'Nanum Gothic';
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+/* banner */
+#banner{
+  min-width: 1000px;
+  background: url(../img/main.jpg) center/cover;
+  color: #f1f1f1;
+}
+/* +아이콘 */
+#banner h1 i{color: orange; padding-left: 20px;}
+#banner h2{
+  font-size: 30px;
+  text-indent: 5px;
+}
+/* banner의 링크 버튼 요소 */
+#banner .btn{
+  display: flex;
+  margin-top: 20px;
+}
+#banner .btn a{
+  margin-right: 20px;
+  padding: 8px 34px;
+  border: 2px solid #f1f1f1;
+  transition: all 0.3s; /*버튼 띵 나오는 애니메이션*/
+}
+#banner .btn a:hover{
+  border-color: orange;
+  color: orange;
+}
+
+
+/* work */
+#work{
+  min-width: 1000px;
+  background-color: #fcd307;
+}
+#work>.wrap{
+  width: 800px;
+  padding: 100px 0;
+  display: flex;
+}
+#work .box{
+  width: 200px;
+  text-align: center;
+}
+#work .box img{border-radius: 50%;}
+#work .box h3{
+  margin-top: 20px;
+}
+
+
+/* about */
+#about h1 i{
+  padding-right: 20px;
+}
+#about>.wrap>p{
+  font-size: 18px;
+  text-indent: 70px;
+}
+#about .member{
+  margin: 60px 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#about .member li{
+  margin: 0 25px;
+}
+#about .member li h3{
+  margin-top: 20px;
+  letter-spacing: 6px;
+  font-size: 16px;
+}
+#about .member li p{
+  color: #666;
+  letter-spacing: 2px;
+}
+#about .txt{
+  display: flex;
+}
+#about .txt li{
+  margin: 0 25px;
+  text-align: justify;
+}
+
+
+/* contact */
+#contact{
+  background-color: #333;
+  color: #f1f1f1;
+}
+#contact h1 i{
+  padding-right: 20px;
+}
+#contact>.wrap>p{
+  font-size: 18px;
+  text-indent: 70px;
+}
+#contact .container{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+#contact .map>p{
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#contact .map p i{
+  font-size: 35px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+#contact .contact h2{
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.contact form{
+  display: flex;
+}
+.contact form .box{
+  width: 250px;
+  margin-right: 5px;
+}
+input[type=text]{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.contact form textarea{
+  width: 250px;
+  height: 130px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  resize: none;
+}
+input[type=submit]{
+  border: none;
+  background-color: #f9be20;
+  color: #f1f1f1;
+  padding: 6px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: #f5ae16;
+}
+.contact hr{
+  margin: 50px 0;
+}
+
+
+/* footer */
+footer > .wrap{
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer span{
+  margin-right: 30px;
+}
+footer p a{
+  background-color: #ff9; 
+  margin-right: 5px;
+}
+footer p a:hover{
+  text-decoration: underline;
+}
+.icon{display: flex;}
+.icon >li{
+  margin: 0 5px;
+  font-size: 18px;
+  margin-top: -2px;
+}
+/* 스크롤바를 가려놓음, 가로스크롤바도 사라집니다. */
+/* ::-webkit-scrollbar{display: none;} */
